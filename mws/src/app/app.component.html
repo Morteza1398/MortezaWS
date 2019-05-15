@@ -223,7 +223,7 @@
                                     </div>
                                 </div>
                                 <h1 class="text-center">
-                                    PORTFOLIO
+                                    {{portfolio.title}}
                                 </h1>
                             </div>
                     </div>
@@ -232,16 +232,18 @@
                     <div class="kayo-container">
                         <div class="mrkayo-main-title">
                             <h2>
-                                My Work
+                                {{portfolio.title2}}
                                 <span class="kayo-line"></span>
                             </h2>
                         </div>
                         <div class="text-center">
                             <ul class="portfolio-sorting list-unstyled text-center kayo-taps">
                                 <li class="active" data-filter="*">All</li>
-                                <li data-filter=".front-end">Front End</li>
-                                <li data-filter=".back-end">Back End</li>
-                                <li data-filter=".graphic-design">Graphic Design</li>
+                                <li data-filter=".front-end">{{portfolio.app}}</li>
+                                <li data-filter=".back-end">{{portfolio.website}}</li>
+                                <li data-filter=".graphic-design">{{portfolio.product
+                                    
+                                }}</li>
                             </ul> <!--end portfolio sorting -->
                         </div>
                         <div class="portfolio-items">
@@ -259,7 +261,7 @@
                                             </div>
                                         </div>
                                         <div class="port-image">
-                                            <img src="images/work/01.jpg" class="img-responsive" alt="">
+                                            <img src="assets/images/work/01.jpg" class="img-responsive" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -276,7 +278,7 @@
                                             </div>
                                         </div>
                                         <div class="port-image">
-                                            <img src="images/work/02.jpg" class="img-responsive" alt="">
+                                            <img src="assets/images/work/02.jpg" class="img-responsive" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -293,7 +295,7 @@
                                             </div>
                                         </div>
                                         <div class="port-image">
-                                            <img src="images/work/03.jpg" class="img-responsive" alt="">
+                                            <img src="assets/images/work/03.jpg" class="img-responsive" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -310,7 +312,7 @@
                                             </div>
                                         </div>
                                         <div class="port-image">
-                                            <img src="images/work/04.jpg" class="img-responsive" alt="">
+                                            <img src="assets/images/work/04.jpg" class="img-responsive" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -327,7 +329,7 @@
                                             </div>
                                         </div>
                                         <div class="port-image">
-                                            <img src="images/work/05.jpg" class="img-responsive" alt="">
+                                            <img src="assets/images/work/05.jpg" class="img-responsive" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -346,7 +348,7 @@
                                             </div>
                                         </div>
                                         <div class="port-image">
-                                            <img src="images/work/06.png" class="img-responsive" alt="">
+                                            <img src="assets/images/work/06.png" class="img-responsive" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -390,6 +392,7 @@
                                     <i class="pe-7s-study"></i> <span>{{resume.education}}</span>
                                 </h3>
                                 <div class="timeline-content">
+                                    <p>{{resume.education_description}}</p>
                                     <div class="timeline-box" *ngFor="let edu of resume.educations">
                                         <div class="timeline-date">
                                             {{edu.years}}
@@ -414,6 +417,7 @@
                                     <i class="pe-7s-ribbon"></i> <span>{{resume.work}}</span>
                                 </h3>
                                 <div class="timeline-content">
+                                    <p>{{resume.work_description}}</p>
                                     <div class="timeline-box" *ngFor="let wrk of resume.works">
                                         <div class="timeline-date">
                                             {{wrk.years}}
@@ -435,7 +439,7 @@
                         </div>
                     </div>
                     <div class="take-my-resume">
-                        <a href="#" class="kayo-btn-1"><span class="glyphicon glyphicon-cloud-download"></span> Take My Resume</a>
+                        <a href="https://drive.google.com/file/d/15HGPUo09QYava3abXnKYJ1MwOaR8JbT4/view" class="kayo-btn-1"><span class="glyphicon glyphicon-cloud-download"></span> Take My Resume</a>
                     </div>
                 </div>
                 <div class="kayo-skills">
@@ -618,7 +622,7 @@
         </section>
         <!-- End Skills ===================-->
     
-        <!-- Start portfolio
+        <!-- Start blog
         ===================================-->
         <section class="full-page" id="blog">
             <div class="blog overlay-container">
@@ -1000,7 +1004,7 @@
                 </div>
             </div>
         </section>
-        <!-- End portfolio ================-->
+        <!-- End blog ================-->
     
         <!-- Start Contact
         ===================================-->
@@ -1015,7 +1019,7 @@
                                     </div>
                                 </div>
                                 <h1 class="text-center">
-                                    CONTACT ME
+                                    {{contact.title}}
                                 </h1>
                             </div>
                     </div>
@@ -1024,7 +1028,7 @@
                     <div class="kayo-container">
                         <div class="mrkayo-main-title">
                             <h2>
-                                Get In Touch
+                                {{contact.title2}}
                                 <span class="kayo-line"></span>
                             </h2>
                         </div>
@@ -1039,7 +1043,7 @@
                                     <div class="kayo-list-info">
                                         <h4>Location</h4>
                                         <p>
-                                            Los Angeles, USA
+                                            {{contact.location}}
                                         </p>
                                     </div>
                                 </div>
@@ -1054,7 +1058,7 @@
                                     <div class="kayo-list-info">
                                         <h4>Phone</h4>
                                         <p>
-                                            +123 654 78900
+                                            {{contact.phone}}
                                         </p>
                                     </div>
                                 </div>
@@ -1069,7 +1073,7 @@
                                     <div class="kayo-list-info">
                                         <h4>Email</h4>
                                         <p>
-                                            kayo@example.com
+                                            {{contact.email}}
                                         </p>
                                     </div>
                                 </div>

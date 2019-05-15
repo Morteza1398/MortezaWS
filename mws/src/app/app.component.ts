@@ -6,16 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'mws';
+  title = 'Morteza';
   home: any = {
     hi: "HI, IAM",
     name: "Morteza",
     job: "Full Stack Developer",
-    facebook: "http://91.98.46.192f",
-    twitter: "http://91.98.46.192t",
-    instagram: "http://91.98.46.192i",
-    linkedin: "http://91.98.46.192l",
-    google: "http://91.98.46.192g",
+    facebook: "https://www.facebook.com/morteza.esmailpour.9",
+    twitter: "https://twitter.com/",
+    instagram: "https://www.instagram.com/",
+    linkedin: "https://www.linkedin.com/in/morteza-esmailpour/",
+    google: "https://plus.google.com/u/0/111316970931828916064",
   };
   navbar: any = {
     home: "HOME",
@@ -24,6 +24,14 @@ export class AppComponent {
     resume: "RESUME",
     blog: "Blog",
     contact: "Contact Me"
+  };
+  navbar_fa: any = {
+    home: "خانه",
+    about: "درباره من",
+    portfolio: "نمونه کارها",
+    resume: "رزومه",
+    blog: "بلاگ",
+    contact: "تماس با من"
   };
   about: any = {
     title: "About Me",
@@ -140,15 +148,13 @@ export class AppComponent {
     age: "31 Years",
     experience: "6 Years",
     country: "Iran",
-    location: "Tehran, Shahran",
-    email: "morteza.esmailpoor@gmail.com",
-    phone: "+ (98) 911 118 5062",
   };
   
   resume: any = {
     title: "RESUME",
     experience: "My Experience",
     education: "Education",
+    education_description: 'All my life I have been driven by my strong belief that education is important. I try to learn something new every single day.',
     educations : [
       { 
         uni: 'University of Tehran', 
@@ -173,6 +179,7 @@ export class AppComponent {
       },
     ],
     work: "Work History",
+    work_description: "I partner with startups, organizations and companies to build digital products that help clients overcome challenges and create lasting connections with millions of people every day.",
     works :  [
       { 
         title: 'Full Stack Developer', 
@@ -314,6 +321,21 @@ export class AppComponent {
       },
     ],
     techssskill: "Technical Skills",
-    
   };
+  portfolio: any = {
+    title: "PORTFOLIO",
+    title2: "My Work",
+    app: "Mobile Apps",
+    website: "Web Sites",
+    product: "Other Product",
+    email: "morteza.esmailpoor@gmail.com",
+  };
+  contact: any = {
+    title: "CONTACT ME",
+    title2: "Get In Touch",
+    location: "Tehran, Shahran",
+    phone: "+ (98) 911 118 5062",
+    email: "morteza.esmailpoor@gmail.com",
+  };
+
 }
